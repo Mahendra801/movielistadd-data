@@ -1,0 +1,33 @@
+<!-- <div>
+<h1>Movie Name</h1>
+<input type="text" [(ngModel)]="moviename" placeholder="Enter movie name">
+<h1>Language</h1>
+<input type="text"  [(ngModel)]="language" placeholder="Enter the Language">
+<h1>Genre</h1>
+<input type="text" [(ngModel)]="Genre" placeholder="Enter the Genre">
+</div><br>
+<div>
+    <button (click)="save()">Save</button>
+    <button (ckick)="Cancel()">Cancel</button>
+</div>
+<ul *ngFor="let ad of adding" >
+    <li>{{ad}}</li><hr>
+    <li>{{ad}}</li><hr>
+    <li>{{ad}}</li><hr>
+</ul> -->
+<!-- <br> -->
+<br>
+<form [formGroup]="movie">
+    <label>Movie Name :
+        <input type="text" formControlName="movieName" placeholder="Enter the movie name"><br>
+        <br>
+   </label>
+   <label>Language:
+       <input type="text" formControlName="language" placeholder=" enter the language">
+   <br><br></label>
+   <label>Genre:
+       <input type="text" formControlName="Genre" placeholder="Genre">
+   <br></label>
+   <button [routerLink]="['/movie']" (click)="save(movie.value)">save</button>
+   <button (click)="Cancel(movie)">cancel</button>
+</form>

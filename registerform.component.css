@@ -1,0 +1,19 @@
+.text{
+    margin: 50px;
+    border-radius: 50px;
+}
+tr{
+    background-color: black;
+}
+.Registerform{
+padding: 20px;
+border-radius: 20px solid black;
+}
+.login{
+    padding: 20px;
+    border-radius: 20px solid black;
+}
+.logout{
+    padding: 20px;
+    border-radius: 20px solid black;
+}

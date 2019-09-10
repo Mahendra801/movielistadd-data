@@ -1,0 +1,14 @@
+<form [formGroup]="signup">
+    <label> Name:
+         <input type="text" formControlName="name" placeholder="name"><br>
+         <br>
+    </label>
+    <label>password:
+        <input type="password" formControlName="password" placeholder="password">
+    <br><br></label>
+    <label>confirmpassword:
+        <input type="password" formControlName="confirmpassword" placeholder="confirmpassword">
+    <br><br><br></label>
+    <button [routerLink]="['/login']" (click)="signupform(signup)">signup</button><br><br>
+    <div><span>Alredy havean account?</span><p routerlink="class" style="cursor: pointer;">login</p></div>
+</form>
